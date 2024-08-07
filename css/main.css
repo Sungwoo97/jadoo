@@ -17,7 +17,6 @@
 
 /* 변수 */
 :root{
-
   --txt-color: #5E6282;
   --white: white;
   --container: 1170px;
@@ -28,6 +27,44 @@
 .container{
   width: var(--container);
   margin: 0 auto;
+}
+header{
+  
+  background: 
+  url('../images/header_bg.svg') no-repeat right top,
+  url('../images/header_ellipse.svg') no-repeat left top
+  ;
+}
+.top_nav{
+  padding: 47px 0;
+}
+.top_nav.fixed{
+  position: fixed;
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,.8);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .06);
+}
+
+.top_nav > div{
+  display: flex;
+  justify-content: space-between;
+}
+nav{
+  display: flex;
+}
+.top_nav ul{
+  display: flex;
+}
+.main_menu{
+  gap: 60px;
+  margin-right: 86px;
+}
+.login_links{
+  gap: 50px;
+  margin-right: 42px;
 }
 
 /* 폰트 */
