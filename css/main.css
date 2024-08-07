@@ -51,12 +51,18 @@ header{
 .top_nav > div{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav{
   display: flex;
 }
 .top_nav ul{
   display: flex;
+}
+.top_nav a {
+  font-family: 'Product Sans Medium Regular';
+  font-size: 17px;
+  color: #212832;
 }
 .main_menu{
   gap: 60px;
@@ -66,6 +72,26 @@ nav{
   gap: 50px;
   margin-right: 42px;
 }
+.login_links a{
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: .3s;
+}
+.login_links a:hover{
+  border-color: #212832;
+}
+.logo a{
+  width: 116px;
+  height: 35px;
+  display: block;
+  background: url('../images/Logo.svg') no-repeat;
+  text-indent: -9999em;
+}
+
 
 /* 폰트 */
 body{
