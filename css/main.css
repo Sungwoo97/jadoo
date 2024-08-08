@@ -324,7 +324,10 @@ header .content .cta .icon{
     0 39px 25px rgba(0,0,0,0.0121),
     0 64px 47px rgba(0,0,0,0.0152),
     0 100px 80px rgba(0,0,0,0.02);
+<<<<<<< HEAD
   border: 1px solid transparent;
+=======
+>>>>>>> 7b2260c2ee0aabfbac56dbc81f07f7d18e443a97
 }
 
 .destinations_list li img{
