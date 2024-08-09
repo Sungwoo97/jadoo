@@ -656,3 +656,79 @@ header .content .cta .icon{
   0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 
   0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
 }
+/* Subscribe */
+.subscribe{
+  border-radius: 129px 20px 20px 20px;
+  background: url('../images/subscribe_bg1.svg') no-repeat left bottom,
+  url('../images/subscribe_bg2.svg') no-repeat right top,
+  rgba(223,215,249,.2);
+  padding: 79px 156px 73px;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+.subscribe h2{
+  font-size: 33px;
+  line-height: 54px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 74px;
+}
+.subscribe form{
+  width: 625px;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.subscribe form .field{
+  background: var(--white);
+  width: 420px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  gap: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.subscribe form .field input{
+  flex:1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.subscribe form button{
+  width: 180px;
+  background: linear-gradient(#FF946D ,#FF7D68 );
+  color: var(--white);
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe .decoration{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: var(--white);
+  background: linear-gradient(45deg , #5E3BE1, #747DEF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -20px;
+  top: -13px;
+  font-size: 30px;
+}
+.subscribe:after{
+  content: '';
+  width: 153px;
+  height: 166px;
+  position: absolute;
+  right: -99px;
+  bottom:  -70px;
+  background: url('../images/subscribe_bg3.svg') no-repeat;
+  z-index: -1;
+}
