@@ -4,6 +4,24 @@ let paginationUp = document.querySelector('.pagination .up');
 let paginationDown = document.querySelector('.pagination .down');
 let currentIdx = 0;
 let testimonialsCount = testimonialsList.length;
+let partnerList = document.querySelector('.partner_list');
+let partnerListWidth = 234;
+let partnerListCount =document.querySelectorAll('.partner_list li').length;
+let partnerListLeft = 0;
+let partnerListTotalWidth = partnerListWidth * partnerListCount;
+
+
+partnerList.style.width =  partnerListTotalWidth + 'px';
+
+function movePartnerList(){
+  partnerListLeft -= 2;
+  if(partnerListLeft === -(partnerListTotalWidth/2)){
+    partnerListLeft = 0;
+  }
+  partnerList.style.left = partnerListLeft + 'px';
+  requestAnimationFrame(movePartnerList);
+}
+requestAnimationFrame(movePartnerList);
 
 
 pager.forEach((item,idx) =>{
