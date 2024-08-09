@@ -9,7 +9,7 @@ let partnerListWidth = 234;
 let partnerListCount =document.querySelectorAll('.partner_list li').length;
 let partnerListLeft = 0;
 let partnerListTotalWidth = partnerListWidth * partnerListCount;
-
+let animation;
 
 partnerList.style.width =  partnerListTotalWidth + 'px';
 
@@ -19,9 +19,16 @@ function movePartnerList(){
     partnerListLeft = 0;
   }
   partnerList.style.left = partnerListLeft + 'px';
-  requestAnimationFrame(movePartnerList);
+  animation = requestAnimationFrame(movePartnerList);
 }
 requestAnimationFrame(movePartnerList);
+
+partnerList.addEventListener('mouseenter', ()=>{
+  cancelAnimationFrame(animation);
+});
+partnerList.addEventListener('mouseleave', ()=>{
+  requestAnimationFrame(movePartnerList);
+});
 
 
 pager.forEach((item,idx) =>{
