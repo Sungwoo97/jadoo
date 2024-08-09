@@ -422,7 +422,15 @@ header .content .cta .icon{
   0px 20px 13px 0px rgba(0, 0, 0, 0.01), 
   0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 
   0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: .35s ease-out;
 }
+.active .pic_of_month .detail{
+  transform: none;
+  opacity: 1;
+}
+
 .pic_of_month .detail img{
   margin-bottom: 20px;
 }
@@ -484,6 +492,13 @@ header .content .cta .icon{
   0px 20px 13px 0px rgba(0, 0, 0, 0.01), 
   0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 
   0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00);
+  transform: translateX(100px);
+  opacity: 0;
+  transition: .35s ease-out;
+}
+.active .pic_of_month .ongoing{
+  transform: none;
+  opacity: 1;
 }
 .ongoing h5{
   color:#84829A;
@@ -518,14 +533,14 @@ header .content .cta .icon{
 }
 .ongoing .bar{
   position: absolute;
+  width: 0;
   top: 0; bottom: 0; left: 0; right: 0;
   border-radius: 2.5px;
   background: #8A79DF;
   height: 5px;
+  transition: .3s;
 }
-.ongoing .bar[data-late="40"]{
-  width: 40%;
-}
+
 /* Testimonials */
 .testimonials{
   display: flex;
